@@ -14,9 +14,10 @@ def add_item (title, price, quantity = 1)
   self.total += price * quantity
   quantity.times do 
     self.items << title 
-    
-  self.last_item = price * quantity
   end
+  
+self.last_item = price * quantity
+
 end 
 
 def apply_discount 
@@ -39,7 +40,5 @@ def void_last_transaction
   self.total -= self.last_item 
   
 end
-
-
 
 end 
